@@ -35,8 +35,11 @@ let sumOfCrystals = 0;
 let losses = 0;
 let wins = 0;
 
+// let RandomChoice = RandomNumbers[Math.floor(Math.random()*RandomNumbers.length)]; 
+// console.log(RandomChoice);
+
+
 let RandomChoice = RandomNumbers[Math.floor(Math.random()*RandomNumbers.length)]; 
-console.log(RandomChoice);
 
 
 function getRandom(min,max){
@@ -49,6 +52,7 @@ function startGame(){
     crystal.green.value = getRandom(1,12)
     crystal.red.value = getRandom(1,12)
     crystal.yellow.value = getRandom(1,12)
+    RandomChoice = RandomNumbers[Math.floor(Math.random()*RandomNumbers.length)]; 
     randomnumberdiv.textContent = "Random Number: " + RandomChoice;
     scoreDiv.textContent = "Score: " + sumOfCrystals;
 }
