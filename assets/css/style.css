@@ -1,8 +1,6 @@
 body {
     background-color: lightskyblue;
-    width: 60%;
-
-
+    text-align: center;
 }
 
 header {
@@ -11,9 +9,9 @@ header {
     font-size: 36px;
     padding-top: 35px;
     padding-bottom: 35px;
+    margin-bottom: 10px;
     height: 100px;
     width: 300px;
-    position: center;
     
 }
 
@@ -22,7 +20,8 @@ header {
     text-align: center;
     background: blue;
     font-size: medium;
-    padding: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 40%;
 
     
