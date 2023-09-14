@@ -1,133 +1,83 @@
 body {
-    background-color: lightskyblue;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
     text-align: center;
-}
-
-header {
-    text-align: center;
-    background: orange;
-    font-size: 36px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    margin-bottom: 10px;
-    height: 100px;
-    width: 300px;
-    
 }
 
 #instructions {
-
-    text-align: center;
-    background: blue;
-    font-size: medium;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 40%;
-
-    
+    overflow: hidden;
+    transition: max-height 0.5s;
 }
 
-#randomNumber {
-
-    text-align: center;
-    background: pink;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 100px;
-    width: 200px;
-
-    
+#toggleInstructions {
+    display: block;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    transition: background-color 0.3s;
 }
 
-#playerNumber {
-
-    text-align: center;
-    background: seagreen;
-    margin-top: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    height: 100x;
-    width: 200px;
-
+#toggleInstructions:hover {
+    background-color: #333;
 }
 
-#score {
-    
-    text-align: center;
-    background: green;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 100px;
-    width: 200px;
 
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 2em;
+    margin-bottom: 50px;
 }
 
-#numbersBox {
 
-    text-align: center;
-    background: white;
-    font-size: medium;
-    padding: auto;
-    width: 30%;
 
+section {
+    padding: 50px 0;
 }
 
-#buttons {
-    
-    text-align: center;
-    background: red;
-    font-size: medium;
-    padding: auto;
-    width: 40%;
-}
-
-#scorebox {
-    
-    text-align: center;
-    background: grey;
-    font-size: medium;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 40%;
-
-}
-
-.crystalImages {
-
-    width: 75px;
-    height: 75px;
-    padding: auto;
-    margin-bottom: 10px;
+#RandomNumber, #score {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
 }
 
 #crystals {
-
-    text-align: center;
-    background: tan;
-    font-size: medium;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 40%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
 }
 
-#yourTotalScoreIs {
-
-    text-align: center;
-    background: greenyellow;
-    font-size: medium;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 40%;
-
+.crystalImages {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
+.crystalImages:hover {
+    transform: scale(1.1);
+}
 
+#scorebox {
+    background-color: #fff;
+    padding: 20px;
+    margin: 40px auto;
+    width: 40%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+#scorebox p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
